@@ -1,0 +1,331 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+	color: white;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--theme-color: #28E98C;
+	--theme-color-dark: #1F1F1F;
+	--theme-color-dark-secondary: #666666;
+}
+
+.text-theme-color {
+	color: var(--theme-color);
+}
+
+.bg-theme-color {
+	background: var(--theme-color);
+}
+
+.border-theme-color {
+	border: 1px solid var(--theme-color);
+}
+
+.bg-theme-color-dark {
+	background: var(--theme-color-dark);
+}
+
+.text-theme-color-dark {
+	color: var(--theme-color-dark);
+}
+
+.bg-theme-color-dark-secondary {
+	background: var(--theme-color-dark-secondary);
+}
+
+.border-theme-color-dark-secondary {
+	border: 1px solid var(--theme-color-dark-secondary);
+}
+
+.text-theme-secondary {
+	color: #8a8a8a;
+}
+
+body, html {
+	background: var(--theme-color-dark);
+	overflow-x: hidden;
+}
+
+.f-roboto {
+	font-family: "Roboto", serif;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+}
+
+ul, li {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	padding: 0;
+	max-width: 1380px;
+}
+
+.profile {
+	max-width: 380px;
+	margin: auto;
+}
+
+.social-media {
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	align-content: center;
+	padding: 10px;
+	color: var(--theme-color-dark-secondary);
+}
+
+.profile ul li {
+	border-width: 2px;
+}
+
+
+.profile .fa-regular.fa-envelope {
+	color: var(--theme-color-dark);
+}
+
+
+#content {
+	padding: 70px 20px;
+}
+
+
+.round-text span {
+	left: 45%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.round-text {
+	border-radius: 100%;
+	border: 1px solid var(--theme-color-dark-secondary);
+	padding: 15px;
+}
+
+.round-text img, .fa-react {
+  animation: spin 5s linear infinite;
+}
+
+
+#home h1 {
+	font-size: 45px;
+	font-weight: 300;
+	max-width: 600px;
+	line-height: 1.2;
+	margin: 60px 0;
+}
+
+#about, #resume, #services, #skills, #portfolio, #testimonial, #pricing, #contact {
+	margin-top: 150px;
+}
+
+#about h1 {
+	font-size: 40px;
+	font-weight: 300;
+	margin-top: 50px;
+	margin-bottom: 1.5rem;
+	max-width: 600px;
+}
+
+#about p {
+	max-width: 600px;
+}
+
+
+.timeline-wrapper {
+	border-left: 3px solid var(--theme-color-dark-secondary);
+}
+
+.timeline-item {
+	position: relative;
+}
+
+
+.timeline-item::before {
+	content: '';
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	background: var(--theme-color-dark-secondary);
+	border-radius: 100%;
+	left: -33px;
+	transition: background .5s ease;
+}
+
+.timeline-item:hover::before {
+	background: var(--theme-color);
+}
+
+
+.timeline-item:hover .timeline-time {
+	color: var(--theme-color);
+}
+
+
+.swiper-nav {
+	background: none;
+	outline: none;
+	border-radius: 100%;
+	font-size: 30px;
+	height: 60px;
+	width: 60px;
+	margin-top: 50px;
+	margin-right: 20px;
+}
+
+
+.swiper-nav:hover i {
+	color: var(--theme-color);
+}
+
+.brands-logo {
+	height: 40px;
+}
+
+.brands-logo.good-habits {
+	height: 15px;
+}
+
+
+.pricing-card {
+	max-width: 350px;
+}
+
+
+#contact input, textarea, select {
+	border: none;
+	outline: none;
+	padding: 20px 10px;
+	resize: none;
+}
+
+#contact input, textarea:placeholder {
+	color: var(--theme-color-dark-secondary);
+}
+
+.profile button, .pricing-card button {
+	transition: all .5s ease;
+	border: 1px solid var(--theme-color);
+	outline: none;
+	color: var(--theme-color-dark);
+}
+
+.profile button:hover, .pricing-card button:hover {
+	background: transparent;
+	color: var(--theme-color);
+}
+
+
+
+.common-hover:hover {
+	border-color: var(--theme-color);
+}
+
+.span.common-hover, .span.common-hover i, .swiper-nav i, .common-hover, .timeline-item .timeline-time, .social-media {
+	transition: all .5s ease;
+}
+
+span.common-hover:hover, span.common-hover:hover i, .social-media:hover {
+	color: var(--theme-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media (min-width:992px) {
+	body {
+		overflow: hidden;
+	}
+	#profile {
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#content {
+		height: 100vh;
+		width: 100%;
+		max-width: 800px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding-top: 100px;
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+	}
+	#home h1 {
+		font-size: 80px;
+	}
+	#home p {
+		max-width: 500px;
+	}
+	.round-text span {
+		left: 40%;
+	}
+	.brands-logo {
+		height: 50px;
+	}
+}
